@@ -52,11 +52,13 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   } else if (toolChoice == '3') { // third tool
 
     stroke(200, 40, 200, 8);
+    strokeWeight(5);
     stroke('yellow')
     line(mouseX, mouseY, pmouseX, pmouseY);
   } else if (toolChoice == '4') {
 
     stroke(255, 0, 127);
+    strokeWeight(30);
     line(mouseX, mouseY, pmouseX, pmouseY);
   } else if (key == '5') { // this tool calls a function
     stroke(255, 0, 0);
@@ -66,16 +68,21 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
  // make testbox do something!
  //   line(mouseX, mouseY, pmouseX, pmouseY);
   } else if (toolChoice == '6') {
+    strokeWeight(20)
+    fill(255, 153, 51);
     triangle(30, 75, 58, 20, 86, 75);
-    stroke(200);
+    stroke(153, 255, 255);
     triangle(mouseX, mouseY, pmouseX, pmouseY,);
   } else if (toolChoice == '7') {
-
-    fill(190, 50, 10);
+    strokeWeight(10);
+    stroke(178, 255, 102);
+    fill(255, 153, 153);
     rect(mouseX, mouseY, 20, 20);
   } else if (toolChoice == '8') {
 
     fill(300, 100, 0, 80);
+    strokeWeight(1)
+    stroke(300, 100, 0, 80);
     rect(mouseX, mouseY, 200, 20);
   } else if (toolChoice == '9') {
 
