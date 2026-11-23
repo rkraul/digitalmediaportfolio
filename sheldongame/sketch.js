@@ -22,7 +22,7 @@ async function setup() {
 }
 
 function draw() {
-  background(255, 224, 84);
+  background(149, 84, 255);
 
   if (gameState == "START") {
     startScreen();
